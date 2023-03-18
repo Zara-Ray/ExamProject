@@ -28,7 +28,7 @@ resource "kubernetes_ingress_v1" "voteapp-ingress" {
   }
 }
 
-resource "kubernetes_ingress_v1" "micro-ingress" {
+resource "kubernetes_ingress_v1" "sock-shop-ingress" {
   metadata {
     name      = "sock-shop"
     namespace = "sock-shop"
@@ -42,7 +42,7 @@ resource "kubernetes_ingress_v1" "micro-ingress" {
 
   spec {
     rule {
-      host = "micro.chizaram.live"
+      host = "sock-shop.chizaram.live"
       http {
         path {
           backend {
